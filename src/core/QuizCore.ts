@@ -13,6 +13,7 @@ class QuizCore {
   private questions: QuizQuestion[];
   private currentQuestionIndex: number;
   private score: number;
+  private size: number
 
   /**
    * Constructor
@@ -23,6 +24,7 @@ class QuizCore {
     this.questions = quizData;
     this.currentQuestionIndex = 0;
     this.score = 0;
+    this.size = this.questions.length;
   }
 
   /**
@@ -71,6 +73,10 @@ class QuizCore {
    */
   public getScore(): number {
     return this.score;
+  }
+
+  public getSize(): number {
+    return this.size;
   }
 
 }

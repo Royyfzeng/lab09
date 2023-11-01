@@ -3,11 +3,13 @@ Enhance User Experience by adding visual highlights to selected answers
 Hint: You can use the className attribute for highlighting*/
 .selected {
     cursor: pointer; /* Change cursor on hover for interactivity */
+    color: red;
   }
   
   /* Additional styling for better user experience */
   .selected:hover {
     cursor: pointer;
+    color: blueviolet;
   }
   
   
@@ -71,5 +73,9 @@ Hint: You can use the className attribute for highlighting*/
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
+  }
+
+  li:hover {
+    background-color: greenyellow;
   }
   
